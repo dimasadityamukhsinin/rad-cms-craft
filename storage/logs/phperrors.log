@@ -1,0 +1,134 @@
+[10-Feb-2021 10:51:41 UTC] An Error occurred while handling another error:
+yii\base\InvalidConfigException: craft\web\Request::cookieValidationKey must be configured with a secret key. in C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\web\Request.php:1681
+Stack trace:
+#0 C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\web\Request.php(1663): yii\web\Request->loadCookies()
+#1 C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\web\Request.php(1751): yii\web\Request->getCookies()
+#2 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\Request.php(1238): yii\web\Request->loadCsrfToken()
+#3 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\assets\cp\CpAsset.php(380): craft\web\Request->getCsrfToken()
+#4 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\assets\cp\CpAsset.php(99): craft\web\assets\cp\CpAsset->_craftData()
+#5 C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\web\View.php(267): craft\web\assets\cp\CpAsset->registerAssetFiles(Object(craft\web\View))
+#6 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\View.php(1833): yii\web\View->registerAssetFiles('craft\\web\\asset...')
+#7 C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\web\View.php(163): craft\web\View->registerAssetFiles('craft\\web\\asset...')
+#8 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\View.php(1078): yii\web\View->endBody()
+#9 C:\xampp\htdocs\rad-cms\storage\runtime\compiled_templates\7d\7d900b37fff08a22fade2e6c2e0b6b850ef86a118f008946d8b2010db12fa5df.php(96): craft\web\View->endBody()
+#10 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\Template.php(405): __TwigTemplate_cccc05851b525dcd60e7b5b7d76b3ab23240aa516b9318dcd2ef2bec90097aad->doDisplay(Array, Array)
+#11 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\Template.php(378): Twig\Template->displayWithErrorHandling(Array, Array)
+#12 C:\xampp\htdocs\rad-cms\storage\runtime\compiled_templates\26\26c31146469ede6c5fe5210d99e6fdd0fcb70042374422adfe3f8676d3efa1ac.php(48): Twig\Template->display(Array, Array)
+#13 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\Template.php(405): __TwigTemplate_d0b58c9331a3a573db9ae65e110328666dff38a1b6ccce6f7075c27acb1c6743->doDisplay(Array, Array)
+#14 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\Template.php(378): Twig\Template->displayWithErrorHandling(Array, Array)
+#15 C:\xampp\htdocs\rad-cms\storage\runtime\compiled_templates\f9\f9837dca2053fd14d12bcb8d7330adc4c2f4eec7eb87ac72ddad2380e11c1c48.php(46): Twig\Template->display(Array, Array)
+#16 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\Template.php(405): __TwigTemplate_3381130660e0310f4702e0aca5b3965a8edfaf7b308a81451d9bdfda7fd4d001->doDisplay(Array, Array)
+#17 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\Template.php(378): Twig\Template->displayWithErrorHandling(Array, Array)
+#18 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\Template.php(390): Twig\Template->display(Array)
+#19 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\TemplateWrapper.php(45): Twig\Template->render(Array, Array)
+#20 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\Environment.php(318): Twig\TemplateWrapper->render(Array)
+#21 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\View.php(389): Twig\Environment->render('503', Array)
+#22 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\View.php(450): craft\web\View->renderTemplate('503', Array)
+#23 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\Controller.php(257): craft\web\View->renderPageTemplate('503', Array, 'cp')
+#24 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\controllers\TemplatesController.php(231): craft\web\Controller->renderTemplate('503', Array)
+#25 [internal function]: craft\controllers\TemplatesController->actionRenderError()
+#26 C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#27 C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#28 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\Controller.php(190): yii\base\Controller->runAction('render-error', Array)
+#29 C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\base\Module.php(534): craft\web\Controller->runAction('render-error', Array)
+#30 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\Application.php(274): yii\base\Module->runAction('templates/rende...', Array)
+#31 C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\web\ErrorHandler.php(109): craft\web\Application->runAction('templates/rende...')
+#32 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\ErrorHandler.php(147): yii\web\ErrorHandler->renderException(Object(craft\web\ServiceUnavailableHttpException))
+#33 C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\base\ErrorHandler.php(135): craft\web\ErrorHandler->renderException(Object(craft\web\ServiceUnavailableHttpException))
+#34 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\ErrorHandler.php(63): yii\base\ErrorHandler->handleException(Object(craft\web\ServiceUnavailableHttpException))
+#35 [internal function]: craft\web\ErrorHandler->handleException(Object(craft\web\ServiceUnavailableHttpException))
+#36 {main}
+
+Next Twig\Error\RuntimeError: An exception has been thrown during the rendering of a template ("craft\web\Request::cookieValidationKey must be configured with a secret key."). in C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\templates\_layouts\base.html:57
+Stack trace:
+#0 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\Template.php(378): Twig\Template->displayWithErrorHandling(Array, Array)
+#1 C:\xampp\htdocs\rad-cms\storage\runtime\compiled_templates\26\26c31146469ede6c5fe5210d99e6fdd0fcb70042374422adfe3f8676d3efa1ac.php(48): Twig\Template->display(Array, Array)
+#2 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\Template.php(405): __TwigTemplate_d0b58c9331a3a573db9ae65e110328666dff38a1b6ccce6f7075c27acb1c6743->doDisplay(Array, Array)
+#3 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\Template.php(378): Twig\Template->displayWithErrorHandling(Array, Array)
+#4 C:\xampp\htdocs\rad-cms\storage\runtime\compiled_templates\f9\f9837dca2053fd14d12bcb8d7330adc4c2f4eec7eb87ac72ddad2380e11c1c48.php(46): Twig\Template->display(Array, Array)
+#5 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\Template.php(405): __TwigTemplate_3381130660e0310f4702e0aca5b3965a8edfaf7b308a81451d9bdfda7fd4d001->doDisplay(Array, Array)
+#6 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\Template.php(378): Twig\Template->displayWithErrorHandling(Array, Array)
+#7 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\Template.php(390): Twig\Template->display(Array)
+#8 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\TemplateWrapper.php(45): Twig\Template->render(Array, Array)
+#9 C:\xampp\htdocs\rad-cms\vendor\twig\twig\src\Environment.php(318): Twig\TemplateWrapper->render(Array)
+#10 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\View.php(389): Twig\Environment->render('503', Array)
+#11 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\View.php(450): craft\web\View->renderTemplate('503', Array)
+#12 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\Controller.php(257): craft\web\View->renderPageTemplate('503', Array, 'cp')
+#13 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\controllers\TemplatesController.php(231): craft\web\Controller->renderTemplate('503', Array)
+#14 [internal function]: craft\controllers\TemplatesController->actionRenderError()
+#15 C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\Controller.php(190): yii\base\Controller->runAction('render-error', Array)
+#18 C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\base\Module.php(534): craft\web\Controller->runAction('render-error', Array)
+#19 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\Application.php(274): yii\base\Module->runAction('templates/rende...', Array)
+#20 C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\web\ErrorHandler.php(109): craft\web\Application->runAction('templates/rende...')
+#21 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\ErrorHandler.php(147): yii\web\ErrorHandler->renderException(Object(craft\web\ServiceUnavailableHttpException))
+#22 C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\base\ErrorHandler.php(135): craft\web\ErrorHandler->renderException(Object(craft\web\ServiceUnavailableHttpException))
+#23 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\ErrorHandler.php(63): yii\base\ErrorHandler->handleException(Object(craft\web\ServiceUnavailableHttpException))
+#24 [internal function]: craft\web\ErrorHandler->handleException(Object(craft\web\ServiceUnavailableHttpException))
+#25 {main}
+Previous exception:
+craft\web\ServiceUnavailableHttpException in C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\Application.php:546
+Stack trace:
+#0 C:\xampp\htdocs\rad-cms\vendor\craftcms\cms\src\web\Application.php(183): craft\web\Application->_processInstallRequest(Object(craft\web\Request))
+#1 C:\xampp\htdocs\rad-cms\vendor\yiisoft\yii2\base\Application.php(392): craft\web\Application->handleRequest(Object(craft\web\Request))
+#2 C:\xampp\htdocs\rad-cms\web\index.php(22): yii\base\Application->run()
+#3 {main}
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs',
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin',
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf',
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php',
+    'REDIRECT_PHPRC' => '\\xampp\\php',
+    'REDIRECT_TMP' => '\\xampp\\tmp',
+    'REDIRECT_STATUS' => '200',
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs',
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin',
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf',
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php',
+    'PHPRC' => '\\xampp\\php',
+    'TMP' => '\\xampp\\tmp',
+    'HTTP_HOST' => 'localhost',
+    'HTTP_CONNECTION' => 'keep-alive',
+    'HTTP_CACHE_CONTROL' => 'max-age=0',
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1',
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36',
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
+    'HTTP_SEC_FETCH_SITE' => 'none',
+    'HTTP_SEC_FETCH_MODE' => 'navigate',
+    'HTTP_SEC_FETCH_USER' => '?1',
+    'HTTP_SEC_FETCH_DEST' => 'document',
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br',
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en-US;q=0.9,en;q=0.8',
+    'HTTP_COOKIE' => 'PHPSESSID=8hgonfjj2pht6t29b8ee9ub4jb; 845e1f46cd7919556fd2e68fdd6d5ba0_username=4d341371e822acbf905cc3e11cce0318262871023b33353c13238313e8cfd457a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%22845e1f46cd7919556fd2e68fdd6d5ba0_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D; CraftSessionId=4c19mq5pgfdt3736nq4h2c2dn6; 6118bd845240846b0bc95ea32975870f_identity=11008e8660357f10befa4af5f4b6ae3be180cab055ff14573208f32fc062dc06a%3A2%3A%7Bi%3A0%3Bs%3A41%3A%226118bd845240846b0bc95ea32975870f_identity%22%3Bi%3A1%3Bs%3A242%3A%22%5B1%2C%22%5B%5C%22pBpNPKcqVD_pBzxrm-OdB1_iCvwMcvD9yhljMzPWTUXO8DBpZmEqwpYvEQwtopOmU_hHxwzCKHn5qThVYXBc_L5rjXrCMwpRpF_n%5C%22%2Cnull%2C%5C%22Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F88.0.4324.150%20Safari%2F537.36%5C%22%5D%22%2C3600%5D%22%3B%7D; CRAFT_CSRF_TOKEN=28b7a702e03da86cdfaed3d9a1b9211924d68ff63dd840bc113b7ecba2129ecaa%3A2%3A%7Bi%3A0%3Bs%3A16%3A%22CRAFT_CSRF_TOKEN%22%3Bi%3A1%3Bs%3A208%3A%22eTJncmqnSGzJqoQbD76gkIBiwRKzYqT0mNz3jTH-%7C94b983d410391eced88060c834196879264575dedc30dc2f7c469730d87e8bfdeTJncmqnSGzJqoQbD76gkIBiwRKzYqT0mNz3jTH-%7C1%7C%242y%2413%24axU9pmg7y71eG73ATnzNBuxcT%2FzLcnbG8Kyqycza9gXZlhTcjyyXm%22%3B%7D; 6118bd845240846b0bc95ea32975870f_username=163fb495fc37e2c0fd5443873e78bb261295d7a0c83eb5f1b9d763c10505e24da%3A2%3A%7Bi%3A0%3Bs%3A41%3A%226118bd845240846b0bc95ea32975870f_username%22%3Bi%3A1%3Bs%3A5%3A%22admin%22%3B%7D',
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\composer;C:\\Users\\DIMAS\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\DIMAS\\AppData\\Local\\Yarn\\bin;C:\\Users\\DIMAS\\AppData\\Roaming\\npm;C:\\Users\\DIMAS\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Program Files\\heroku\\bin',
+    'SystemRoot' => 'C:\\Windows',
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe',
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC',
+    'WINDIR' => 'C:\\Windows',
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.0 Server at localhost Port 80</address>
+',
+    'SERVER_SOFTWARE' => 'Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.0',
+    'SERVER_NAME' => 'localhost',
+    'SERVER_ADDR' => '::1',
+    'SERVER_PORT' => '80',
+    'REMOTE_ADDR' => '::1',
+    'DOCUMENT_ROOT' => 'C:/xampp/htdocs',
+    'REQUEST_SCHEME' => 'http',
+    'CONTEXT_PREFIX' => '',
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/xampp/htdocs',
+    'SERVER_ADMIN' => 'postmaster@localhost',
+    'SCRIPT_FILENAME' => 'C:/xampp/htdocs/rad-cms/web/index.php',
+    'REMOTE_PORT' => '58529',
+    'REDIRECT_URL' => '/rad-cms/web/contact.json',
+    'REDIRECT_QUERY_STRING' => 'p=contact.json',
+    'GATEWAY_INTERFACE' => 'CGI/1.1',
+    'SERVER_PROTOCOL' => 'HTTP/1.1',
+    'REQUEST_METHOD' => 'GET',
+    'QUERY_STRING' => 'p=contact.json',
+    'REQUEST_URI' => '/rad-cms/web/contact.json',
+    'SCRIPT_NAME' => '/rad-cms/web/index.php',
+    'PHP_SELF' => '/rad-cms/web/index.php',
+    'REQUEST_TIME_FLOAT' => 1612954301.347894,
+    'REQUEST_TIME' => 1612954301,
+]
