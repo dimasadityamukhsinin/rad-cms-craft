@@ -1,0 +1,26 @@
+dateModified: 1612953843
+email:
+  fromEmail: dimasadityamukhsinin@gmail.com
+  fromName: 'RAD STUDIO CMS'
+  transportType: craft\mail\transportadapters\Sendmail
+plugins:
+  element-api:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: 'RAD STUDIO CMS'
+  schemaVersion: 3.6.1
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

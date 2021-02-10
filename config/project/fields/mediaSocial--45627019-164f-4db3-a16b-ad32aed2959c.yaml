@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: 8e8bbe77-5528-4ffe-9adb-3eb9812f7c9b
+handle: mediaSocial
+instructions: ''
+name: 'Media Social'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_mediasocial}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
