@@ -1,1 +1,1 @@
-web: vendor/bin/heroku-php-apache2 -i php.ini
+web: vendor/bin/heroku-php-apache2 -c php.ini
