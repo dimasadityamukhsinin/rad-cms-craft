@@ -11,5 +11,5 @@
 use craft\helpers\App;
 
 return [
-    'url' => App::env('DATABASE_URL')
+    'url' => App::env('CLEARDB_DATABASE_URL')
 ];
